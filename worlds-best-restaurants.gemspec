@@ -1,6 +1,8 @@
+require 'worlds_best_restaurants/version'
+
 Gem::Specification.new do |s|
   s.name        = 'worlds-best-restaurants'
-  s.version     = '0.0.1'
+  s.version     = WorldsBestRestaurants::VERSION
   s.date        = '2015-12-23'
   s.summary     = "Best Restaurants in the World"
   s.description = "Provides details on the San Pellegrino Worlds 50 Best restaurants"
@@ -10,4 +12,10 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://rubygems.org/gems/worlds-best-restaurants'
   s.license     = 'MIT'
   s.executables << 'worlds-best-restaurants'
+
+  s.add_development_dependency "bundler", "~> 1.10"
+  s.add_development_dependency "rake", "~> 10.0"
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "nokogiri"
+  s.add_development_dependency "pry"
 end
