@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'worlds_best_restaurants'
+
+CLI.new.call
