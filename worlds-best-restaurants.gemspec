@@ -3,7 +3,7 @@ require_relative './lib/worlds_best_restaurants/version'
 Gem::Specification.new do |s|
   s.name        = 'worlds-best-restaurants'
   s.version     = WorldsBestRestaurants::VERSION
-  s.date        = '2015-12-23'
+  s.date        = '2016-01-13'
   s.summary     = "Best Restaurants in the World"
   s.description = "Provides details on the San Pellegrino Worlds 50 Best restaurants"
   s.authors     = ["Danny Dawson"]

@@ -1,7 +1,7 @@
-class CLI
+class WorldsBestRestaurants::CLI
 
   def call
-    Scraper.new.make_restaurants
+    WorldsBestRestaurants::Scraper.new.make_restaurants
     puts "Welcome to the 50 Best Restaurants in the World"
     start
   end  
@@ -17,7 +17,7 @@ class CLI
     puts "What restaurant would you like more information on?"
     input = gets.strip
 
-    restaurant = Restaurant.find(input.to_i)
+    restaurant = WorldsBestRestaurants::Restaurant.find(input.to_i)
 
     print_restaurant(restaurant)
 
@@ -55,7 +55,7 @@ class CLI
     puts ""
     puts "---------- Restaurants #{from_number} - #{from_number+9} ----------"
     puts ""
-    Restaurant.all[from_number-1, 10].each.with_index(from_number) do |restaurant, index|
+    WorldsBestRestaurants::Restaurant.all[from_number-1, 10].each.with_index(from_number) do |restaurant, index|
       puts "#{index}. #{restaurant.name} - #{restaurant.location}"
     end  
   end 

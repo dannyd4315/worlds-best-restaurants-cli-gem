@@ -2,4 +2,4 @@
 
 require_relative '../lib/worlds_best_restaurants'
 
-CLI.new.call
+WorldsBestRestaurants::CLI.new.call
