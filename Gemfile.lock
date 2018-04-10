@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    worlds-best-restaurants (0.2.0)
+    worlds-best-restaurants (0.2.1)
 
 GEM
   remote: https://rubygems.org/
